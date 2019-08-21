@@ -49,7 +49,7 @@ class ChatMessagesCell: UITableViewCell {
         addSubview(self.bubbleBackgroundView)
         addSubview(self.messageLabel)
         let constraints = [self.messageLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 32),
-                           self.messageLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -32),
+                           self.messageLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
                            self.messageLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 250),
             
                            self.bubbleBackgroundView.topAnchor.constraint(equalTo: messageLabel.topAnchor, constant: -16),
