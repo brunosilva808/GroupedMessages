@@ -60,7 +60,11 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+        if section == 0 {
+            return 50
+        }
+        
+        return 50 + 16
     }
     
     
