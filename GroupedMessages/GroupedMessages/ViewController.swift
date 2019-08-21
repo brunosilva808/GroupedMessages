@@ -48,18 +48,28 @@ class ViewController: UITableViewController {
         return cell
     }
     
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = HeaderView(frame: self.view.frame)
         if let firstMessageInSection = self.textMessages[section].first {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy"
             let dateString = dateFormatter.string(from: firstMessageInSection.date)
-            return dateString
+            headerView.dateString = dateString
         }
-        
-        return "Section: \(section)"
+        return headerView
     }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//
+//
+//
+//        return "Section: \(section)"
+//    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return self.textMessages.count
