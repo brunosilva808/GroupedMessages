@@ -12,9 +12,14 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+    }
+    
+    fileprivate func setupUI() {
         navigationItem.title = "Messages"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        tableView.separatorStyle = .none
         tableView.register(ChatMessagesCell.self, forCellReuseIdentifier: self.cellId)
     }
 
