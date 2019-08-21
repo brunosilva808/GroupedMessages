@@ -14,6 +14,7 @@
 		46AD8438230D450E003A4CC4 /* GroupedMessagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD8437230D450E003A4CC4 /* GroupedMessagesTests.swift */; };
 		46AD8443230D450E003A4CC4 /* GroupedMessagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD8442230D450E003A4CC4 /* GroupedMessagesUITests.swift */; };
 		46AD8451230D472B003A4CC4 /* ChatMessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD8450230D472B003A4CC4 /* ChatMessagesCell.swift */; };
+		46FF0948230D6BBB0006B0C8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF0947230D6BBB0006B0C8 /* ChatMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		46AD8442230D450E003A4CC4 /* GroupedMessagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedMessagesUITests.swift; sourceTree = "<group>"; };
 		46AD8444230D450E003A4CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46AD8450230D472B003A4CC4 /* ChatMessagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessagesCell.swift; sourceTree = "<group>"; };
+		46FF0947230D6BBB0006B0C8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,11 @@
 			children = (
 				46AD8422230D450D003A4CC4 /* AppDelegate.swift */,
 				46AD8424230D450D003A4CC4 /* ViewController.swift */,
+				46AD8450230D472B003A4CC4 /* ChatMessagesCell.swift */,
 				46AD8429230D450E003A4CC4 /* Assets.xcassets */,
 				46AD842B230D450E003A4CC4 /* LaunchScreen.storyboard */,
 				46AD842E230D450E003A4CC4 /* Info.plist */,
-				46AD8450230D472B003A4CC4 /* ChatMessagesCell.swift */,
+				46FF0947230D6BBB0006B0C8 /* ChatMessage.swift */,
 			);
 			path = GroupedMessages;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46AD8425230D450D003A4CC4 /* ViewController.swift in Sources */,
+				46FF0948230D6BBB0006B0C8 /* ChatMessage.swift in Sources */,
 				46AD8451230D472B003A4CC4 /* ChatMessagesCell.swift in Sources */,
 				46AD8423230D450D003A4CC4 /* AppDelegate.swift in Sources */,
 			);
