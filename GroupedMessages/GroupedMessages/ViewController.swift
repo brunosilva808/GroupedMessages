@@ -16,7 +16,7 @@ class ViewController: UITableViewController {
 
     fileprivate let messagesFromServer = [ChatMessage(text: "Here's my very first message", isIncoming: true, date: Date.dateFromCustomString(customString: "11/03/2018")),
                               ChatMessage(text: "I'm going to message another long message that will word wrap", isIncoming: true, date: Date()),
-                              ChatMessage(text: "I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap", isIncoming: true, date: Date()),
+                              ChatMessage(text: "I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap", isIncoming: true, date: Date.dateFromCustomString(customString: "23/11/2018")),
                               ChatMessage(text: "I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap, I'm going to message another long message that will word wrap", isIncoming: false, date: Date()),ChatMessage(text: "Third section message", isIncoming: false, date: Date())]
     fileprivate var chatMessages = [[ChatMessage]]()
     override func viewDidLoad() {
@@ -36,16 +36,19 @@ class ViewController: UITableViewController {
         tableView.register(ChatMessagesCell.self, forCellReuseIdentifier: self.cellId)
     }
     
-    func attemptToAssembleGroupedMessages() {
-        let groupedMessages = Dictionary(grouping: messagesFromServer) { (element) -> Date in
+    fileprivate func attemptToAssembleGroupedMessages() {
+        
+        var groupedMessages = Dictionary(grouping: messagesFromServer) { (element) -> Date in
+            return element.date.reduceToMonthDayYear()
+        }
+        
+        groupedMessages = Dictionary(grouping: messagesFromServer) { (element) -> Date in
             return element.date
         }
         
-        groupedMessages.keys.sorted(by: { $0.compare($1) == .orderedAscending }).forEach { (date) in
-            self.chatMessages.append(groupedMessages[date]!)
+        groupedMessages.keys.sorted().forEach { (key) in
+            self.chatMessages.append(groupedMessages[key] ?? [])
         }
-
-        self.tableView.reloadData()
     }
     
     // UITableView
