@@ -16,6 +16,7 @@
 		46AD8451230D472B003A4CC4 /* ChatMessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD8450230D472B003A4CC4 /* ChatMessagesCell.swift */; };
 		46FF0948230D6BBB0006B0C8 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF0947230D6BBB0006B0C8 /* ChatMessage.swift */; };
 		46FF094A230D8C4D0006B0C8 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF0949230D8C4D0006B0C8 /* HeaderView.swift */; };
+		46FF094C2313DE380006B0C8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF094B2313DE380006B0C8 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		46AD8450230D472B003A4CC4 /* ChatMessagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessagesCell.swift; sourceTree = "<group>"; };
 		46FF0947230D6BBB0006B0C8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		46FF0949230D8C4D0006B0C8 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		46FF094B2313DE380006B0C8 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				46AD842E230D450E003A4CC4 /* Info.plist */,
 				46FF0947230D6BBB0006B0C8 /* ChatMessage.swift */,
 				46FF0949230D8C4D0006B0C8 /* HeaderView.swift */,
+				46FF094B2313DE380006B0C8 /* Date+Extension.swift */,
 			);
 			path = GroupedMessages;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				46FF0948230D6BBB0006B0C8 /* ChatMessage.swift in Sources */,
 				46AD8451230D472B003A4CC4 /* ChatMessagesCell.swift in Sources */,
 				46AD8423230D450D003A4CC4 /* AppDelegate.swift in Sources */,
+				46FF094C2313DE380006B0C8 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
